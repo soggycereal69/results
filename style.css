@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #4a0895;
+}
+
+.paper {
+  background-color: white;
+  width: 75%;
+  margin: auto;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.outer-div {
+  border: 1px solid var(--blue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid-div {
+  border: 2px solid var(--blue);
+  width: 99.8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-div {
+  position: relative;
+  border: 1px solid var(--blue);
+  width: 99.7%;
+}
+
+.outer-div,
+.mid-div,
+.inner-div {
+  padding: 2px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.img-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("./images/ops_bg.png");
+  background-repeat: repeat;
+  background-size: 8rem;
+  opacity: 0.8;
+}
